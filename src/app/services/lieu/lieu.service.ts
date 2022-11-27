@@ -14,4 +14,8 @@ export class LieuService {
   }
   public getDelete(id :number){
     return this.http.delete("LIEU-SERVICE/lieus/${id}");
+  }
+  public searchLieus(keyword :string):Observable<any>{
+    return this.http.get("LIEU-SERVICE/lieus");
+  }
 }

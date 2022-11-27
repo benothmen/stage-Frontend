@@ -1,0 +1,37 @@
+{
+    "/LIEU-SERVICE/*": {
+      "target": "http://localhost:8888",
+      "secure": false,
+      "logLevel": "debug"
+    },
+    "/TYPE-SERVICE/*": {
+      "target": "http://localhost:8888",
+      "secure": false,
+      "logLevel": "debug"
+    },
+     "/FACULTE-SERVICE/*": {
+      "target": "http://localhost:8888",
+      "secure": false,
+      "logLevel": "debug"
+    },
+    "/SPECIALITE-SERVICE/*": {
+      "target": "http://localhost:8888",
+      "secure": false,
+      "logLevel": "debug"
+    },
+    "/STAGE-SERVICE/*": {
+      "target": "http://localhost:8888",
+      "secure": false,
+      "logLevel": "debug"
+    },
+    "/STAGIAIRE-SERVICE/*": {
+      "target": "http://localhost:8888",
+      "secure": false,
+      "logLevel": "debug"
+    },
+    "/E-SERVICE/*": {
+      "target": "http://localhost:8888",
+      "secure": false,
+      "logLevel": "debug"
+    }
+}

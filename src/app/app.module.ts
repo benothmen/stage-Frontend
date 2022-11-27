@@ -13,6 +13,7 @@ import { SpecialiteComponent } from './pages/specialite/specialite.component';
 import { StageComponent } from './pages/stage/stage.component';
 import { StagiaireComponent } from './pages/stagiaire/stagiaire.component';
 import { TypeComponent } from './pages/type/type.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { TypeComponent } from './pages/type/type.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

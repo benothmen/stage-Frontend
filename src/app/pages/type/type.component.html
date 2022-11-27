@@ -1,1 +1,37 @@
-<p>type works!</p>
+<div class="container mt-2">
+    <div class="card">
+      <div class="card-header"> الاماكن </div>
+      <div class="card-body">
+        <form [formGroup]="searchFormGroup" (ngSubmit)="handleSearchLieus()">
+            <div class="input-group">
+              <label class="input-group-text"> كلمة رئيسية :</label>
+              <input type="text" class="form-control" formControlName="keyword" >
+              <button class="btn btn-info">
+                <i class="bi bi-search"></i>
+              </button>
+            </div>
+        </form>
+        <table class="table">
+          <thead>
+            <tr>
+              <th> المعرف</th>
+              <th> الاسم </th>
+              <th> </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let l of lieus">
+              <td>{{l.id}}</td>
+              <td>{{l.nom}}</td>
+              <td>
+                <button (click)="handleDeleteLieu(l)" class="btn btn-danger">
+                  <i class="bi bi-trash"></i>
+                </button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  
